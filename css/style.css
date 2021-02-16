@@ -44,7 +44,7 @@ body{
 input[type=text], input[type=number], input[type=date]{
     width: 400px;
 }
-textarea{
+text area{
     width: 400px;
 }
 input{
