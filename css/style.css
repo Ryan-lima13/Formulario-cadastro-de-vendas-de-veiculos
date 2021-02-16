@@ -1,0 +1,71 @@
+body{
+    margin: 0px;
+    padding:0px;
+    font-family: Arial, Helvetica, sans-serif;
+	background-color: #F0EBF8;
+}
+/* cabeçalho*/
+#cabecalho{
+    height: 160px;
+    padding: 20px;
+	background-color: #673AB7;
+}
+
+.primeiro-titulo{
+    color: #fff;
+    text-align: center;
+}
+
+#paragrafo{
+    color: #673AB7;
+    text-align: center;
+}
+
+.form-cabecalho{
+    padding: 10px;
+}
+#container{
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    margin-top: -65px;
+    padding: 10px;
+}
+#form-container{
+    padding: 10px;
+}
+.block{
+    display: block;
+}
+.box-input{
+    margin-bottom: 30px;
+}
+input[type=text], input[type=number], input[type=date]{
+    width: 400px;
+}
+textarea{
+    width: 400px;
+}
+input{
+    border: 1px solid transparent;
+    border-bottom: 1px solid #808080;
+}
+.destaque{
+    color: #ff0000;
+}
+.box-input ul{
+    list-style: none;
+}
+.btn{
+    width: 100px;
+    height: 50px;
+    border: 1px solid black;
+    background-color: #673AB7;
+    color: #fff;
+    cursor: pointer;
+    
+}
+.btn:hover{
+    color: black;
+}

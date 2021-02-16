@@ -5,18 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cadastro de Veículos</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header>
         <div id="cabecalho">
-            <h1>Cadastre seu veículo para vender muito mais rápido!</h1>
+            <h1 class="primeiro-titulo">Cadastre seu veículo para vender muito mais rápido!</h1>
         </div>
     </header>
     <main>
         <div id="container">
-            <p>CADASTRO</p>
-            <h2>Venda fácil seu veículo!</h2>
-            <p>Descreva as características do seu veículo e marque todas os opicionais e características que ele possui</p>
+            <div class="form-cabecalho">
+
+                <p id="paragrafo">CADASTRO</p>
+
+                <h2>Venda fácil seu veículo!</h2>
+
+                <p>Descreva as características do seu veículo e marque todas os opicionais e características que ele possui</p>
+
+            </div>
             <div id="form-container">
                 <Form>
 
@@ -24,7 +31,7 @@
 
                         <Label>Título do anúncio: <span class="destaque">*</span></Label>
 
-                        <input type="text" name="titulo_anucio" required placeholder="Defina um titulo para seu veículo" class="block">
+                        <input type="text" name="titulo_anucio"  placeholder="Defina um titulo para seu veículo" class="block" required >
 
                     </div>
 
@@ -82,7 +89,7 @@
 
                         <Label>Data de compra do veículo: <span class="destaque">*</span></Label>
 
-                        <input type="date" name="data_compra" required>
+                        <input type="date" name="data_compra" required class="block">
 
                     </div>
 
@@ -174,9 +181,11 @@
 
             </div>
 
+            <input type="submit" value="cadastrar" class="btn">
+
 
         </div>
-        <input type="submit" value="cadastrar" class="btn">
+        
     </main>
     
 </body>
