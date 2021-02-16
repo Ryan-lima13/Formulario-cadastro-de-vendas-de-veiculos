@@ -7,6 +7,177 @@
     <title>cadastro de Veículos</title>
 </head>
 <body>
+    <header>
+        <div id="cabecalho">
+            <h1>Cadastre seu veículo para vender muito mais rápido!</h1>
+        </div>
+    </header>
+    <main>
+        <div id="container">
+            <p>CADASTRO</p>
+            <h2>Venda fácil seu veículo!</h2>
+            <p>Descreva as características do seu veículo e marque todas os opicionais e características que ele possui</p>
+            <div id="form-container">
+                <Form>
+
+                    <div class="box-input">
+
+                        <Label>Título do anúncio: <span class="destaque">*</span></Label>
+
+                        <input type="text" name="titulo_anucio" required placeholder="Defina um titulo para seu veículo" class="block">
+
+                    </div>
+
+                    <div class="box-input">
+
+                        <Label>Preço do veículo: <span class="destaque">*</span></Label>
+
+                        <input type="number" name="preco" required class="block">
+                    </div>
+
+                    <div class="box-input">
+
+                        <Label>Descrição: <span class="destaque">*</span></Label>
+
+                        <textarea name="descricao" id="" cols="30" rows="10" class="block" required></textarea>
+                    </div>
+
+                    <div class="box-input">
+
+                        <Label>Único dono? <span class="destaque">*</span></Label>
+                        <select name="dono" id="">
+
+                            <option value="">Selecione</option>
+                            <option value="1">Sim</option>
+                            <option value="0">Não</option>
+
+                        </select>
+                    </div>
+
+                    <div class="box-input">
+
+                        <Label>Marca: <span class="destaque">*</span></Label>
+
+                        <input type="text" name="marca" required placeholder="Digita a marca do seu veículo" class="block">
+
+                    </div>
+
+                    <div class="box-input">
+
+                        <Label>Modelo: <span class="destaque">*</span></Label>
+
+                        <input type="text" name="modelo" placeholder="Digite o modelo do veículo" required class="block">
+
+                    </div>
+
+                    <div class="box-input">
+
+                        <Label>Quilometragem: <span class="destaque">*</span></Label>
+
+                        <input type="number" name="quilometragem" required class="block">
+
+                    </div>
+
+                    <div class="box-input">
+
+                        <Label>Data de compra do veículo: <span class="destaque">*</span></Label>
+
+                        <input type="date" name="data_compra" required>
+
+                    </div>
+
+                    <div class="box-input">
+
+                        <Label>Câmbio: <span class="destaque">*</span></Label>
+
+                        <input type="radio" name="manual" required>
+                        <Label>Manual</Label>
+
+                        <input type="radio" name="automatico" required>
+                        <Label>Automático</Label>
+                    </div>
+
+                    <div class="box-input">
+
+                        <p>Opcionais:</p>
+
+                        <ul>
+
+                            <li>
+                                <input type="checkbox" name="opicional[]">
+                                <Label>Airbag</Label>
+
+                            </li>
+
+                            <li>
+                                <input type="checkbox" name="opicional[]">
+                                <Label>Alarme</Label>
+
+                            </li>
+
+                            <li>
+                                <input type="checkbox" name="opicional[]">
+                                <Label>Ar Condicionado</Label>
+
+                            </li>
+
+                            <li>
+                                <input type="checkbox" name="opicional[]">
+                                <Label>Trava elétrica</Label>
+
+                            </li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="box-input">
+                        
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="opicional[]">
+                                <Label>Vidro elétrico</Label>
+
+                            </li>
+
+                            <li>
+                                <input type="checkbox" name="opicional[]">
+                                <Label>Som</Label>
+
+                            </li>
+
+                            <li>
+                                <input type="checkbox" name="opicional[]">
+                                <Label>Câmera de Ré</Label>
+
+                            </li>
+
+                            <li>
+                                <input type="checkbox" name="opicional[]">
+                                <Label>Banco de Couro</Label>
+
+                            </li>
+                          
+
+                        </ul>
+
+                    </div>
+
+                    <div class="box-input">
+
+                        <p>Envie imagens do veículo: <span class="destaque">*</span></p>
+
+                        <input type="file" multiple accept="imagem/png, imagem/jpeg">
+                    </div>
+
+
+                </Form>
+
+            </div>
+
+
+        </div>
+        <input type="submit" value="cadastrar" class="btn">
+    </main>
     
 </body>
 </html>
